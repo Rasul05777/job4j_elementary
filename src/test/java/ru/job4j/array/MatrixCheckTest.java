@@ -57,10 +57,10 @@ public class MatrixCheckTest {
         char[][] input = {
                 {'X', ' ', ' '},
                 {' ', 'X', ' '},
-                {' ', ' ', 'X'},
+                {' ', ' ', 'Х'},
         };
         char[] result = MatrixCheck.extractDiagonal(input);
-        char[] expected = {'X', 'X', 'X'};
+        char[] expected = {'X', 'X', 'Х'};
         assertThat(result).containsExactly(expected);
     }
 
