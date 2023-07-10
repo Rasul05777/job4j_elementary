@@ -11,6 +11,13 @@ public class Error {
         this.message = message;
     }
 
+    public Error() {
+        active = false;
+        status = 1;
+        message = "В программе найдены ошибки";
+
+    }
+
     public void printInfo() {
         System.out.println("Активация программы " + active);
         System.out.println("Ошибок найдено " + status);
