@@ -5,7 +5,7 @@ public class JukeBox {
             switch (position) {
             case 1 -> System.out.println("Пусть бегут неуклюже");
             case 2 -> System.out.println("Спокойной ночи");
-            default -> System.out.println("");
+            default -> System.out.println("Песня не найдена");
         }
     }
 
