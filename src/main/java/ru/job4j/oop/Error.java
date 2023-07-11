@@ -12,10 +12,6 @@ public class Error {
     }
 
     public Error() {
-        active = false;
-        status = 1;
-        message = "В программе найдены ошибки";
-
     }
 
     public void printInfo() {
