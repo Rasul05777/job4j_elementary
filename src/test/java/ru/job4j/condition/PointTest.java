@@ -8,29 +8,28 @@ public class PointTest {
 
     @Test
     public void when00to20then2() {
-        double expected = 2;
-        Point a = new Point(0, 0);
-        Point i = new Point(2, 0);
-        double dist = a.distance(i);
+        double expected = 3.16;
+        Point a = new Point(5, 0, 1);
+        Point i = new Point(2, 1, 1);
+        double dist = a.distance3d(i);
         Assert.assertEquals(expected, dist, 0.01);
     }
 
     @Test
-    public void when20to20then0() {
-        double expected = 1;
-        Point a = new Point(2, 2);
-        Point i = new Point(1, 2);
-        double dist = a.distance(i);
+    public void when00to20then1() {
+        double expected = 6.40;
+        Point a = new Point(1, 4, 1);
+        Point i = new Point(5, 1, 5);
+        double dist = a.distance3d(i);
         Assert.assertEquals(expected, dist, 0.01);
     }
 
     @Test
-    public void when10to20then1() {
-        double expected = 1;
-        int x1 = 1;
-        Point a = new Point(0, 0);
-        Point i = new Point(1, 0);
-        double dist = a.distance(i);
+    public void when00to20then100() {
+        double expected = 7.87;
+        Point a = new Point(1, 5, 1);
+        Point i = new Point(2, 0, 7);
+        double dist = a.distance3d(i);
         Assert.assertEquals(expected, dist, 0.01);
     }
 }
