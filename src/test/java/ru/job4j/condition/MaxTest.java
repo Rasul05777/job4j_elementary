@@ -25,12 +25,13 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMax5To5To5Then5() {
-        int left = 5;
+    public void whenMax27To5To5To5Then9() {
+        int left = 27;
         int right = 5;
         int one = 5;
-        int result = Max.max(left, right, one);
-        int expected = 5;
+        int down = 5;
+        int result = Max.max(left, right, one, down);
+        int expected = 27;
         assertThat(result).isEqualTo(expected);
     }
 }
